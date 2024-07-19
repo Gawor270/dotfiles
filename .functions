@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# quickly find a file and open it up in system editor
+s() { fzf | xargs -r $EDITOR ;}
+
+# quickly jump to some folder
+j() { cd $(find . -type d -print | fzf) ;}
+
+# pomodoro session with hetman zbojnicki wake up
+countdown() {
+    start="$(( $(date '+%s') + $1))"
+    while [ $start -ge $(date +%s) ]; do
+        time="$(( $start - $(date +%s) ))"
+        printf '%s\r' "$(date -u -d "@$time" +%H:%M:%S)"
+        sleep 0.1
+    done 
+
+    /usr/bin/play /home/gawor17/Music/Pobudka.opus
+}

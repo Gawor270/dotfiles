@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# System config
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export EDITOR='nvim'
+
+# Language specific
+export JAVA_HOME='/usr/lib/jvm/java-17-openjdk'
+export PATH="${PATH}:/home/gawor17/.mix/escripts"

@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+alias ls='ls --color=auto'
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|time|percentage"'
+alias grep='grep --color=auto'
+# for jupyter notebook to work
+alias code='code --enable-proposed-api ms-toolsai.jupyter'
+alias flamess='flameshot gui -p ~/Pictures/'
+# makes jupyter to html conversion easier
+alias jtoh='jupyter nbconvert --to html'
