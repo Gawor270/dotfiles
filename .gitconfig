@@ -1,0 +1,7 @@
+[user]
+	email = gaworbernard@gmail.com
+	name = Gawor270
+[credential]
+	helper = cache
+[core]
+	editor = nvim
